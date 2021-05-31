@@ -1,0 +1,6 @@
+1. Install Lombok in IDE(https://projectlombok.org/download)
+2. Specify required browser in Application .properties file
+3. Download required driver and place in src/main/drivers folder
+4. Specify search Criteria in Feature file(GoogleSampleTest.feature) for google tests
+5.Specify required Id in Feature file(PostsAPI.feature) for API tests
+6.Run RunnerFile using junit and validate generated results(target/cucumber-reports/index.html)

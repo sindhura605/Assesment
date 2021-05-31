@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="10.871">
+    <testcase classname="To validate google Search" name="To verify google search" time="7.762">
+        <system-out><![CDATA[Given User is in google search page.........................................passed
+When User provided "Ducks"..................................................passed
+Then Tilte of the page should contains "Ducks"..............................passed
+And Close the browser.......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate posts API" name="To verify postAPI by providing valid Post Id" time="2.394">
+        <system-out><![CDATA[Given Set Posts URL for 1...................................................passed
+When Post the request.......................................................passed
+Then Status code should be 200..............................................passed
+And 1 should be displayed in response.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate posts API" name="To verify postAPI by providing valid Post Id 2" time="0.118">
+        <system-out><![CDATA[Given Set Posts URL for 50..................................................passed
+When Post the request.......................................................passed
+Then Status code should be 200..............................................passed
+And 50 should be displayed in response......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To validate posts API" name="To verify postAPI by providing invalid Post Id" time="0.12">
+        <system-out><![CDATA[Given Set Posts URL for 101.................................................passed
+When Post the request.......................................................passed
+Then Status code should be 404..............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

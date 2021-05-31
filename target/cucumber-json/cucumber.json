@@ -1,0 +1,387 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-31T20:13:07.639Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1998400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.www.pages.BasePage.openBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "To verify google search",
+        "description": "",
+        "id": "to-validate-google-search;to-verify-google-search;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4430220000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in google search page",
+            "match": {
+              "location": "com.test.www.stepDefinitions.BasePageSteps.user_is_in_google_search_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2267470100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User provided \"Ducks\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ducks\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.test.www.stepDefinitions.GoogleHomePageSteps.user_provided(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23449200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Tilte of the page should contains \"Ducks\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ducks\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.test.www.stepDefinitions.ResultsPageSteps.tilte_of_the_page_should_contains(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 927037500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Close the browser",
+            "match": {
+              "location": "com.test.www.stepDefinitions.BasePageSteps.closeBrowser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SampleTest"
+          }
+        ]
+      }
+    ],
+    "name": "To validate google Search",
+    "description": "",
+    "id": "to-validate-google-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/GoogleSampleTest.feature",
+    "tags": [
+      {
+        "name": "@SampleTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-31T20:13:15.416Z",
+        "before": [
+          {
+            "result": {
+              "duration": 998700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.www.pages.BasePage.openBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "To verify postAPI by providing valid Post Id",
+        "description": "",
+        "id": "to-validate-posts-api;to-verify-postapi-by-providing-valid-post-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1036200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Set Posts URL for 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 18
+                }
+              ],
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.set_posts_url_for(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2017624600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Post the request",
+            "match": {
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.post_the_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.status_code_should_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 367020000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "1 should be displayed in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.should_be_displayed_in_response(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SampleTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-31T20:13:17.821Z",
+        "before": [
+          {
+            "result": {
+              "duration": 998000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.www.pages.BasePage.openBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "To verify postAPI by providing valid Post Id",
+        "description": "",
+        "id": "to-validate-posts-api;to-verify-postapi-by-providing-valid-post-id;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Set Posts URL for 50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 18
+                }
+              ],
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.set_posts_url_for(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 111701000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Post the request",
+            "match": {
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.post_the_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 522800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.status_code_should_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1982800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "50 should be displayed in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 0
+                }
+              ],
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.should_be_displayed_in_response(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SampleTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-31T20:13:17.944Z",
+        "before": [
+          {
+            "result": {
+              "duration": 997300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.www.pages.BasePage.openBrowser()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "To verify postAPI by providing invalid Post Id",
+        "description": "",
+        "id": "to-validate-posts-api;to-verify-postapi-by-providing-invalid-post-id;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 997900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Set Posts URL for 101",
+            "match": {
+              "arguments": [
+                {
+                  "val": "101",
+                  "offset": 18
+                }
+              ],
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.set_posts_url_for(java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 115200300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Post the request",
+            "match": {
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.post_the_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Status code should be 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 22
+                }
+              ],
+              "location": "com.test.www.stepDefinitions.PostsAPISteps.status_code_should_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SampleTest"
+          }
+        ]
+      }
+    ],
+    "name": "To validate posts API",
+    "description": "",
+    "id": "to-validate-posts-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PostsAPI.feature",
+    "tags": [
+      {
+        "name": "@SampleTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
